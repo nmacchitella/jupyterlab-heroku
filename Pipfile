@@ -1,0 +1,18 @@
+[[source]]
+
+url = "https://pypi.python.org/simple"
+verify_ssl = true
+name = "pypi"
+
+
+[packages]
+
+jupyterlab = "*"
+dask = "*"
+toolz = "*"
+"s3contents" = "*"
+ipython = "*"
+
+
+[dev-packages]
+

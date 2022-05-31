@@ -1,22 +1,45 @@
 {
-  "name": "JupyterLab",
-  "description": "JupyterLab on Heroku",
-  "image": "heroku/python",
-  "repository": "https://github.com/heroku/python-getting-started",
-  "keywords": ["python"],
-  "addons": [ "heroku-postgresql" ],
+  "name": "JupyterLab + Amazon S3",
+  "description": "A hosted JupyterLab environment, backed by Amazon S3 (and Heroku).",
+  "keywords": [
+    "productivity",
+    "datascience"
+  ],
+  "website": "https://github.com/jupyterlab/jupyterlab",
+  "repository": "https://github.com/heroku/heroku-jupyterlab",
+  "logo": "http://jupyter.org/assets/main-logo.svg",
+  "success_url": "/",
   "env": {
-    "SECRET_KEY": {
-      "description": "The secret key for the Django application.",
-      "generator": "secret"
+    "PASSWORD": {
+      "description": "(optional) password for the environment.",
+      "required": false
+    },
+    "AWS_ACCESS_KEY_ID": {
+      "description": "Your AWS Access Key ID."
+    },
+    "AWS_SECRET_ACCESS_KEY": {
+      "description": "Your AWS Secret Access Key."
+    },
+    "S3_BUCKET_NAME": {
+      "description": "Your AWS S3 Bucket Name."
     }
   },
-  "environments": {
-    "test": {
-      "scripts": {
-        "test-setup": "python app.py",
-        "test": "python app.py"
-      }
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "Performance-M"
     }
-  }
+  },
+  "image": "heroku/python",
+  "buildpacks": [
+    {
+      "url": "git://github.com/mezis/heroku-buildpack-tex.git"
+    },
+    {
+      "url": "heroku/nodejs"
+    },
+    {
+      "url": "heroku/python"
+    }
+  ]
 }
