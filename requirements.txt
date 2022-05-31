@@ -1,0 +1,8 @@
+jupyterlab
+beautifulsoup4
+psycopg2-binary
+requests
+numpy
+pandas
+matplotlib
+jupyter-contrib-nbextensions
