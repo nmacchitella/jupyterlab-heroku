@@ -20,6 +20,7 @@ c.NotebookApp.contents_manager_class = S3ContentsManager
 c.S3ContentsManager.access_key_id = AWS_ACCESS_KEY_ID
 c.S3ContentsManager.secret_access_key = AWS_SECRET_ACCESS_KEY
 c.S3ContentsManager.bucket = S3_BUCKET_NAME
+c.S3ContentsManager.prefix = "beta/"
 
 c.NotebookApp.token = ''
 c.NotebookApp.password = PASSWORD
