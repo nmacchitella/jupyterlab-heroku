@@ -23,7 +23,7 @@ c.S3ContentsManager.bucket = S3_BUCKET_NAME
 c.S3ContentsManager.prefix = "beta/"
 
 c.NotebookApp.token = ''
-c.NotebookApp.password = PASSWORD
+c.NotebookApp.password = 'argon2:$argon2id$v=19$m=10240,t=10,p=8$ubk10Rux17gywt5a3QT1DQ$g5eHBXyZmk7rQiNffl8LVOInEfgTq7Ttzrx9UrZquHE'
 
 # https://devcenter.heroku.com/articles/ssl-endpoint
 #
