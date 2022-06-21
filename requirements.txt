@@ -6,3 +6,4 @@ numpy
 pandas
 matplotlib
 jupyter-contrib-nbextensions
+s3contents
