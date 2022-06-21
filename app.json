@@ -9,6 +9,7 @@
   "repository": "https://github.com/heroku/heroku-jupyterlab",
   "logo": "http://jupyter.org/assets/main-logo.svg",
   "success_url": "/",
+  "addons": [ "heroku-postgresql" ],
   "env": {
     "PASSWORD": {
       "description": "(optional) password for the environment.",
