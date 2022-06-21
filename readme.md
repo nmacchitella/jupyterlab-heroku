@@ -1,5 +1,3 @@
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
-
 # jupyterlab-heroku
 
 A simple setup for deploying the <a href="https://github.com/jupyterlab/jupyterlab">JupyterLab</a> computational environment to <a href="https://www.heroku.com/">Heroku</a>.
