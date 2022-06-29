@@ -9,3 +9,6 @@ jupyter-contrib-nbextensions
 s3contents
 gspread
 oauth2client
+openpyxl
+xlsxwriter
+
